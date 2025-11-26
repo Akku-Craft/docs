@@ -2,11 +2,15 @@
   <h1>🔋 AkkuCraft 🛠️</h1>
 
   <a href="https://github.com/Akku-Craft">
-    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+    <img src="https://img.shields.io/badge/GitHub-black?style=flat&logo=github
+    " alt="GitHub"/>
   </a>
   <a href="https://akku-craft.vercel.app">
-    <img src="https://img.shields.io/badge/Website-10b981?style=for-the-badge&logo=globe&logoColor=white" alt="Website"/>
+    <img src="https://img.shields.io/badge/Website-Docs-blue?style=flat
+" alt="Website"/>
   </a>
+    <img src="https://img.shields.io/badge/License-GPL_v3-yellow?style=flat&logo=github
+" alt="License"/>
 </div>
 
 > Ein Projekt von: **[Timon](https://github.com/0day-sudo), Fabian, Tammo und [Henry](https://github.com/Jumpstone)**.
@@ -36,12 +40,6 @@ AkkuCraft ermöglicht es dem Benutzer, **einzelne Akkuzellen** (z.B. Li-Ion 1865
 ## ⚙️ Technischer Fokus (Tech Stack)
 
 Dieses Projekt konzentriert sich auf die Schnittstelle zwischen Hardware-Design und intelligenter Steuerung:
-
-<p>
-  <img src="https://img.shields.io/badge/Elektronik-BMS_Design-10b981?style=for-the-badge&logo=kicad&logoColor=white" />
-  <img src="https://img.shields.io/badge/Gehäuse-3D_CAD-10b981?style=for-the-badge&logo=autodesk&logoColor=white" />
-  <img src="https://img.shields.io/badge/Firmware-Arduino/C++-10b981?style=for-the-badge&logo=arduino&logoColor=white" />
-</p>
 
 ---
 
