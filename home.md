@@ -4,7 +4,9 @@
   <a href="https://github.com/Akku-Craft">
     <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
   </a>
-  <img src="https://img.shields.io/badge/Status-Konzeptphase-10b981?style=for-the-badge" alt="Status: Konzeptphase" />
+  <a href="https://akku-craft.vercel.app">
+    <img src="https://img.shields.io/badge/Website-10b981?style=for-the-badge&logo=globe&logoColor=white" alt="Website"/>
+  </a>
 </div>
 
 > Ein Projekt von: **[Timon](https://github.com/0day-sudo), Fabian, Tammo und [Henry](https://github.com/Jumpstone)**.
