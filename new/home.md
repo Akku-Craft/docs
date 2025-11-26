@@ -8,7 +8,8 @@
 ![Static Badge](https://img.shields.io/badge/Status-In_Development-green?style=flat)
 ![Static Badge](https://img.shields.io/badge/IdeenExpo-2025-orange?style=flat)
 
-> Ein Projekt der **Forscher-AG Jahrgang 9** der Oberschule Hagen am Teutoburger Wald  
+> Ein Projekt der **Forscher-AG Jahrgang 9** der Oberschule Hagen am Teutoburger Wald
+> Mitglieder: [Timon](https://github.com/0day-sudo), Fabian, Tammo und [Henry](https://github.com/Jumpstone)
 > Betreut von: **Franciskus Van den Berghe**
 
 ---
