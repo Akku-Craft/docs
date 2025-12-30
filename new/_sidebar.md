@@ -1,8 +1,0 @@
-- [Home](/)
-- [Projektübersicht](projektuebersicht.md)
-- [Technische Umsetzung](technische-umsetzung.md)
-- [IdeenExpo Stationen](ideenexpo-stationen.md)
-- [Bildung & Kompetenzen](bildung-kompetenzen.md)
-- [Nachhaltigkeit](nachhaltigkeit.md)
-- [Zeitplan & Meilensteine](zeitplan-meilensteine.md)
-- [Vision & Ziele](vision-ziele.md)
