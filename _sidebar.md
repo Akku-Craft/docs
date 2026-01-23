@@ -1,1 +1,13 @@
-- [Home](#)
+- [Home](/)
+- Projekt-Grundlagen
+  - [Motivation & Zielsetzung](/grundlagen/motivation.md)
+  - [Akkutechnologie & Sicherheit](/grundlagen/technologie.md)
+- Technische Umsetzung
+  - [Mechanik & 3D-Druck](/technik/mechanik.md)
+  - [Elektronik & BMS](/technik/elektronik.md)
+  - [Software & Steuerung](/technik/software.md)
+- Durchführung & Ergebnisse
+  - [Zusammenfassung & Fazit](/ergebnisse/fazit.md)
+- Wettbewerbe & Präsentation
+  - [IdeenExpo 2026 (Ideenfang)](/events/ideenexpo.md)
+  - [Jugend Forscht 2026](/events/jugendforscht.md)

@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/#/README",
+      "permanent": true
+    }
+  ]
+}

@@ -1,39 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
-    <title>AkkuCraft</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="description" content="Description" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
-    />
-    <!-- Theme: Simple Dark -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Performance hints -->
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
+    <link rel="dns-prefetch" href="//unpkg.com" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Mobile optimization -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#D4AF37" />
+
+    <title>Akku-Craft - Entwicklung einer modularen Powerbank</title>
+    <!-- Load Lucide icons asynchronously -->
+    <script src="https://unpkg.com/lucide@latest" async></script>
+    <!-- Preconnect to external domains for faster DNS resolution -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+
+    <!-- Preload critical fonts -->
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;700&display=swap"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+    <link rel="stylesheet" type="text/css" href="/assets/css/docs-custom.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/header.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/socials.css" />
+    <link rel="icon" href="/assets/img/logo-small.png" type="image/x-icon" />
   </head>
   <body>
+    <!-- Background Grid -->
+    <div class="grid-bg"></div>
+    <header class="header-nav">
+      <div class="header-content">
+        <a href="/" class="logo">
+          <img
+            src="/assets/img/logo-small.png"
+            alt="JumpStone Logo"
+            class="logo-img"
+          />
+          Akku-Craft
+        </a>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+        </ul>
+        <!-- Social Media Buttons -->
+        <div class="social-card">
+          <a
+            href="https://github.com/akku-craft"
+            class="Btn github"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="svgContainer">
+              <img
+                src="/assets/img/badges/github-mark-white.png"
+                alt="GitHub"
+                class="social-icon"
+              />
+            </span>
+            <span class="BG"></span>
+          </a>
+        </div>
+      </div>
+    </header>
     <div id="app"></div>
+
     <script>
       window.$docsify = {
-        name: "",
-        repo: "Akku-Craft/docs",
+        name: "Akku-Craft",
+        repo: "",
         loadSidebar: true,
-        auto2top: true,
-        logo: "/_media/icon.png",
-        share: {
-          whatsapp: true,
+        themeColor: "#D4AF37",
+        alias: {
+          "/.*/_sidebar.md": "/_sidebar.md",
         },
-        homepage: "home.md",
+        auto2top: true,
+        coverpage: false,
+        executeScript: true,
+        search: {
+          paths: "auto",
+          placeholder: "Search Documentation",
+          noData: "No results found!",
+          depth: 3,
+        },
+        plugins: [
+          function (hook) {
+            hook.beforeEach(function (html) {
+              // Add navigation links at the top of each page
+              return html;
+            });
+
+            hook.afterEach(function (html, next) {
+              // Add footer to each page
+              var footer = [
+                '<footer style="margin-top: 80px; padding-top: 20px; border-top: 1px solid #27272a;">',
+                '<div style="text-align: center; font-size: 0.9rem; color: #a1a1aa;">',
+                "<p>",
+                '<a href="https://akku-craft.usbverkehrtherum.de/">Akku-Craft Website</a> © 2026 by ',
+                '<a href="https://jumpstone4477.de" target="_blank">JumpStone</a> is licensed under ',
+                '<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="license noopener noreferrer">CC BY-NC-SA 4.0</a>',
+                "</p>",
+                '<p style="font-size: 0.75rem; opacity: 0.8;">',
+                'Powered by <a href="https://docsify.js.org/" target="_blank">Docsify</a> (MIT License). ',
+                'Theme contains <a href="https://github.com/docsifyjs/docsify/blob/develop/LICENSE" target="_blank">MIT licensed code</a>.',
+                "</p>",
+                "</div>",
+                "</footer>",
+              ].join("");
+              next(html + footer);
+            });
+          },
+        ],
       };
     </script>
-    <!-- Docsify v4 -->
-    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-    <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-    <script src="//unpkg.com/docsify-share/build/index.min.js"></script>
-    <script src="https://unpkg.com/docsify-copy-code@2"></script>
+    <!-- Docsify v4 with performance optimizations -->
+    <script
+      src="//cdn.jsdelivr.net/npm/docsify@4.13.0/lib/docsify.min.js"
+      defer
+    ></script>
+    <script
+      src="//cdn.jsdelivr.net/npm/docsify@4.13.0/lib/plugins/search.min.js"
+      defer
+    ></script>
   </body>
 </html>
